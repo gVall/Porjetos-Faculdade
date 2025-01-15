@@ -1,0 +1,13 @@
+PROCEDURE MAIN ()
+	LOCAL somatotal:= 0
+	LOCAL Na := 1
+	LOCAL Ka := 10
+
+FOR inicio := Na TO Ka
+	somatotal := somatotal + inicio
+NEXT
+
+? "Somatorio: "
+? somatotal
+
+RETURN

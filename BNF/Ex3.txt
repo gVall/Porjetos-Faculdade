@@ -1,0 +1,12 @@
+
+PROCEDURE MAIN ()
+	LOCAL Ab:=10
+	
+   IF (MOD (Ab , 2 ) == 0)
+	? "O numero e par" 
+
+  ELSE
+	? "O numero e impar"
+  ENDIF
+
+RETURN

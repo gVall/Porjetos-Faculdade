@@ -1,0 +1,179 @@
+-- Inicio Programa
+EntradaConst. Inicio ::= Const Inicio;
+EntradaBlocoDeCodigo. Inicio ::= Procedure Inicio;
+EntradaDefFunc. Inicio ::= DeclaracaoFuncao Inicio;
+EntradaChFunc. Inicio ::= ChamarFunc Inicio;
+EntradaComandos. Inicio ::= Comando Inicio;
+
+EntradaConstRecursivo. Inicio ::= Const;
+EntradaBlocoDeCodigoRecursivo. Inicio ::= Procedure;
+EntradaDefFuncRecursivo. Inicio ::= DeclaracaoFuncao;
+EntradaChFuncRecursivo. Inicio ::= ChamarFunc;
+EntradaComandosRecursivo. Inicio ::= Comando;
+
+--  Definição Constante 
+ConstNum. Const ::= "#DEFINE" Ident Numero Const;
+ConstNumRecursivo. Const ::= "#DEFINE" Ident Numero;
+ConstString. Const ::= "#DEFINE" Ident String Const;
+ConstStringRecursivo. Const ::= "#DEFINE" Ident String;
+ConstId. Const ::= "#DEFINE" Ident Ident;
+ConstIdRecursivo. Const ::= "#DEFINE" Ident Ident;
+
+-- Definição De Procedure
+BlocoDeCodigo. Procedure ::= CabecalhoProcedure ListaDeExpressao "RETURN" ;
+BlocoDeCodigoSemComandos. Procedure ::= CabecalhoProcedure "RETURN" ;
+ProcedCabArgs. CabecalhoProcedure ::= "PROCEDURE" Ident "("Argumentos")";
+ProcedCabSemArgs. CabecalhoProcedure ::= "PROCEDURE" Ident "()";
+
+-- Definição/Chamada de Func 
+Func. DeclaracaoFuncao ::= CabecalhoFunc ListaDeExpressao "RETURN" Valor;
+FuncSemComandos. DeclaracaoFuncao ::= CabecalhoFunc "RETURN" Valor;
+FuncVoid. DeclaracaoFuncao ::= "FUNCTION" Ident "()" ListaDeExpressao "RETURN" Valor ;
+FuncCab. CabecalhoFunc ::= "FUNCTION" Ident "()";
+FuncCabArgs. CabecalhoFunc ::= "FUNCTION" Ident "("Argumentos")" ;
+ChmFuncArgs. ChamarFunc ::= Ident "("Argumentos")";
+ChmFuncSemArgs. ChamarFunc ::= Ident "()";
+
+
+-- Definição de Comando
+AtrVarIdValor. DeclaracaoVariavel ::= Ident ":=" Valor;
+AtrVarIdLocalValor. DeclaracaoVariavel ::= "LOCAL" Ident ":=" Valor;
+AtrVarIdPosAr. DeclaracaoVariavel ::= Ident ":=" PosArray;
+AtrVarIdLocalPosAr. DeclaracaoVariavel ::= "LOCAL" Ident ":=" PosArray;
+AtrVarChValor. DeclaracaoVariavel ::= Letra ":=" Valor;
+AtrVarChLocalValor. DeclaracaoVariavel ::= "LOCAL" Letra ":=" Valor;
+AtrVarChPosAr. DeclaracaoVariavel ::= Letra ":=" PosArray;
+AtrVarChLocalPosAr. DeclaracaoVariavel ::= "LOCAL" Letra ":=" PosArray;
+AtrVarPosArValor. DeclaracaoVariavel ::= PosArray ":=" Valor;
+AtrVarPosArLocalValor. DeclaracaoVariavel ::= "LOCAL" PosArray ":=" Valor;
+AtrVarPosArPosAr. DeclaracaoVariavel ::= PosArray ":=" PosArray;
+AtrVarPosALocalPosAr. DeclaracaoVariavel ::= "LOCAL" PosArray ":=" PosArray;
+
+AtrLogi. AtribuicaoLogica ::= Ident ":=" ExpressaoLogica;
+AtrLogiLocal. AtribuicaoLogica ::= "LOCAL" Ident ":=" ExpressaoLogica;
+AtrArrayChLocal. AtribuicaoArray ::= "LOCAL" Letra ":=" Array;
+AtrArrayCh. AtribuicaoArray ::=  Letra ":=" Array;
+AtrArrayIdLocal. AtribuicaoArray ::= "LOCAL" Ident ":=" Array;
+AtrArrayId. AtribuicaoArray ::=  Ident ":=" Array;
+DefAr. Array ::= "{" "{" Numero "," Numero "}" "}";
+DefAr_. Array ::= "{" "{" ValorPosAr "," ValorPosAr "}" "}";
+DefArMatriz. Array ::= "{" "{" Numero "," Numero "}" "," "{" Numero "," Numero "}" "}";
+DefArMatriz_. Array ::= "{" "{" ValorPosAr "," ValorPosAr "}" "," "{" ValorPosAr "," ValorPosAr "}" "}";
+DefArrayPosId. PosArray ::= Ident "["Numero"]""["Numero"]";
+DefArrayPosIdLocal. PosArray ::= "LOCAL" Ident "["Numero"]""["Numero"]";
+DefArrayPosId_. PosArray ::= Ident "["ValorPosAr"]""["ValorPosAr"]";
+DefArrayPosIdLocal_. PosArray ::= "LOCAL" Ident "["ValorPosAr"]""["ValorPosAr"]";
+DefArrayPosCh. PosArray ::= Letra "["Numero"]""["Numero"]";
+DefArrayPosChLocal. PosArray ::= "LOCAL" Letra "["Numero"]""["Numero"]";
+DefArrayPosCh_. PosArray ::= Letra "["ValorPosAr"]""["ValorPosAr"]";
+DefArrayPosChLocal_. PosArray ::= "LOCAL" Letra "["ValorPosAr"]""["ValorPosAr"]";
+rules ValorPosAr ::= ExpressaoAritmetica | ChamarFunc | String | Ident | Double | Array | Letra;
+ExpModId. Mod ::= "MOD" "("Ident "," Ident ")";
+ExpModIdNum. Mod ::= "MOD" "("Ident "," Numero ")";
+ExpModIdLetra. Mod ::= "MOD" "("Ident "," Letra ")";
+ExpModLetra. Mod ::= "MOD" "("Letra "," Ident ")";
+ExpModLetraNum. Mod ::= "MOD" "("Letra "," Numero ")";
+ExpModLetraLetra. Mod ::= "MOD" "("Letra "," Letra ")";
+ExpLenId. Len ::= "LEN" "("Ident")";
+ExpLenLetra. Len ::= "LEN" "("Letra")";
+StmInterr. Interrogacao ::= "?" Valor;
+StmInterrDupla. InterrogacaoDupla ::= "??" Valor;
+StmIf. If ::= "IF" "(" CondLogica ")" ListaDeExpressao "ENDIF";
+StmIfBool. If ::= "IF" "(" Bool ")" ListaDeExpressao "ENDIF";
+StmElse. If ::= "IF" "(" CondLogica ")" ListaDeExpressao "ELSE" ListaDeExpressao "ENDIF";
+StmElseBool. If ::= "IF" "(" Bool ")" ListaDeExpressao "ELSE" ListaDeExpressao "ENDIF";
+StmElseif. Elseif ::= "ELSEIF" "("CondLogica ")" ListaDeExpressao "ENDIF";
+StmElseifBool. Elseif ::= "ELSEIF" "("Bool")" ListaDeExpressao "ENDIF";
+StmDoWhile. DoWhile ::= "DO WHILE" CondLogica ListaDeExpressao "ENDDO";
+StmDoWhileBool. DoWhile ::= "DO WHILE" "("Bool")" ListaDeExpressao "ENDDO";
+StmForNext. ForNext ::= "FOR" DeclaracaoVariavel "TO" Numero ListaDeExpressao "NEXT";
+StmForStep. ForNext ::= "FOR" DeclaracaoVariavel "TO" Numero "STEP" Numero ListaDeExpressao "NEXT";
+StmForNextId. ForNext ::= "FOR" DeclaracaoVariavel "TO" Ident ListaDeExpressao "NEXT";
+StmForStepId. ForNext ::= "FOR" DeclaracaoVariavel "TO" Ident "STEP" Numero ListaDeExpressao "NEXT";
+StmForNextLen. ForNext ::= "FOR" DeclaracaoVariavel "TO" Len ListaDeExpressao "NEXT";
+StmForStepLen. ForNext ::= "FOR" DeclaracaoVariavel "TO" Len "STEP" Numero ListaDeExpressao "NEXT";
+StmForNextMod. ForNext ::= "FOR" DeclaracaoVariavel "TO" Mod ListaDeExpressao "NEXT";
+StmForStepMod. ForNext ::= "FOR" DeclaracaoVariavel "TO" Mod "STEP" Numero ListaDeExpressao "NEXT";
+StmDoCase. DoCase ::= "DO CASE" Ident OperadorLogico Numero ListaDeExpressao "ENDCASE";
+StmDoCaseB. DoCase ::= "DO CASE" "("Bool")" ListaDeExpressao "ENDCASE";
+StmInput. Input ::= "INPUT" String "TO" Ident;
+StmReturn. Return ::= "RETURN" Valor;
+ListExp. ListaDeExpressao ::= ListaDeExpressao Comando;
+ListExpRecursivo. ListaDeExpressao ::= Comando;
+rules Comando ::= DeclaracaoVariavel | AtribuicaoLogica | AtribuicaoArray | PosArray | Mod | Len | Interrogacao | InterrogacaoDupla | If | DoWhile | DoCase | ForNext | Input | Return;
+
+-- Definição Expressão Lógica 
+ExpLogicV. ExpressaoLogica ::= Bool;
+ExpLogicId. ExpressaoLogica ::= Ident ;
+ExpLogicExp. ExpressaoLogica ::= ExpressaoLogica OperadorLogico ExpressaoLogica ;
+
+-- Definição Valor 
+rules Valor ::= ExpressaoLogica | ExpressaoAritmetica | ChamarFunc | String | Ident | Numero | Double | Array | Letra;
+
+-- Condição Lógica 
+CondLTree_. CondLogica ::= "(" CondLogica ")";
+--CondLTreeBool_. CondLogica ::= "("Bool")";
+CondLNum. CondLogica ::= Numero OperadorLogico CondLogica;
+CondLId. CondLogica ::= Ident OperadorLogico CondLogica;
+CondNum. CondLogica ::= Numero OperadorLogico CondLogica;
+CondLVal. CondLogica ::= Valor OperadorLogico CondLogica;
+CondLIdId. CondLogica ::= Ident OperadorLogico Ident;
+CondLIdNumero. CondLogica ::= Ident OperadorLogico Numero;
+CondLIdValor. CondLogica ::= Ident OperadorLogico Valor;
+CondLModNum. CondLogica ::= Mod OperadorLogico Valor;
+CondLModMod. CondLogica ::= Mod OperadorLogico Mod;
+CondLModLen. CondLogica ::= Mod OperadorLogico Len;
+CondLLenValor. CondLogica ::= Len OperadorLogico Valor;
+CondLLenLen. CondLogica ::= Len OperadorLogico Len;
+CondLLenMod. CondLogica ::= Len OperadorLogico Mod;
+CondLNumNum. CondLogica ::= Numero OperadorLogico Numero;
+CondLValorValor. CondLogica ::= Valor OperadorLogico Valor;
+
+--  Definição Expressão Aritmética 
+ExAtree. ExpressaoAritmetica ::= "(" ExpressaoAritmetica ")";
+ExANum. ExpressaoAritmetica ::= Numero OperadoresAritmeticos ExpressaoAritmetica;
+ExAId. ExpressaoAritmetica ::= Ident OperadoresAritmeticos ExpressaoAritmetica;
+ExAVal. ExpressaoAritmetica ::= Valor OperadoresAritmeticos ExpressaoAritmetica;
+ExAChar. ExpressaoAritmetica ::= Letra OperadoresAritmeticos ExpressaoAritmetica;
+ExAIdId. ExpressaoAritmetica ::= Ident OperadoresAritmeticos Ident;
+ExANumNum. ExpressaoAritmetica ::= Numero OperadoresAritmeticos Numero;
+ExARecursivoNumNum. ExpressaoAritmetica ::= Numero OperadoresAritmeticos Numero;
+ExARecursivoNumId. ExpressaoAritmetica ::= Numero OperadoresAritmeticos Ident;
+ExpARecursivoIdNum. ExpressaoAritmetica ::= Ident OperadoresAritmeticos Numero;
+ExpARecursivoIdId. ExpressaoAritmetica ::= Ident OperadoresAritmeticos Ident;
+ExpARecursivoIdChar. ExpressaoAritmetica ::= Ident OperadoresAritmeticos Letra;
+ExpARecursivoCharNum. ExpressaoAritmetica ::= Letra OperadoresAritmeticos Numero;
+ExpARecursivoCharChar. ExpressaoAritmetica ::= Letra OperadoresAritmeticos Letra;
+ExpARecursivoCharId. ExpressaoAritmetica ::= Letra OperadoresAritmeticos Ident;
+ExAtRecursivoi_. ExpressaoAritmetica ::= Numero;
+ExAtree_. ExpressaoAritmetica ::= "(" ExpressaoAritmetica ")";
+
+-- Definição De Argumentos 
+DefArgN. Argumentos ::= Numero Argumentos;
+DefArgB. Argumentos ::= Bool Argumentos ;
+DefArgArgsId. Argumentos ::= Ident Argumentos ;
+DefArgArgsValor. Argumentos ::= Valor Argumentos ;
+DefArgRecursivoN. Argumentos::= Numero;
+DefArgRecursivoB. Argumentos::= Bool;
+DefArgRecursivoId. Argumentos::= Ident;
+DefArgRecursivoValor. Argumentos::= Valor;
+
+-- Definição De Número
+NumeroConDef. Numero ::= Integer Numero;
+NumeroConRecurssivoDef. Numero ::= Integer;
+NumeroUnico. Numero ::= Digito;
+
+-- Símbolos Terminais 
+rules Digito ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+rules Letra ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" |
+"r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" ;
+rules Letra ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P"
+| "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" ;
+rules Caracteres ::= "!" | "@" | "#" | "$" | "%" | "*" | "(" | ")" | "[" | "]" | "&" | "-" | "=" | "_" | "{" | "}" |
+"^" | "~" | "." | "," | "<" | ">" | ";" | "?" | "/" | "\\" ;
+rules Caracteres ::= ":" | "|";
+rules Bool ::= "FALSE" | "TRUE" ;
+VazioLabel. Vazio ::= "";
+rules OperadorLogico ::= "==" | "<" | ">" | "<=" | ">=" | "!=" | "<>" | "#" ;
+rules OperadoreLogico ::= ".OR." | "AND" | ".END." | ".NOT.";
+rules OperadoresAritmeticos ::= "+" | "-" | "*" | "/" | "%" ;

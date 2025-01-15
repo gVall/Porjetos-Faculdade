@@ -1,0 +1,17 @@
+PROCEDURE MAIN()
+	LOCAL fat := 10
+	LOCAL aux := 1
+	LOCAL resultado := 1
+
+	IF (fat == 0)
+		? "Fatorial de 0: "
+		? resultado
+	ELSE 
+		DO WHILE aux <= fat
+			resultado := resultado * aux
+			aux := aux + 1
+		ENDDO
+	? "Fatorial: "
+	? resultado
+	ENDIF
+RETURN

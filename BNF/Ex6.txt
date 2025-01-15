@@ -1,0 +1,24 @@
+PROCEDURE MAIN ()
+	LOCAL a := {{1, 2}, {3, 4}}
+	LOCAL b := {{5, 6}, {7, 8}}
+
+	IF (LEN(a) != LEN(b))
+	   ? "Não é possível multiplicar as matrizes"
+	  
+ 	ENDIF
+	
+	LOCAL result := {{0, 0}, {0, 0}}
+
+	FOR i := 1 TO LEN(a)
+	   FOR j := 1 TO LEN(b)
+	      sum := 0
+	      FOR k := 1 TO LEN(b)
+	      	 aux1 := a[i][k]
+	      	 aux2 := b[k][j]
+		 sum := sum + aux1 * aux2
+	      LOCAL result[i][j] := sum
+	      NEXT
+	  NEXT
+	NEXT
+	? result
+RETURN
