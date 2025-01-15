@@ -11,3 +11,5 @@ Para o projeto foi utilizado o PostgreSQL.
 e dinâmica implementação de uma interface visual para os usuários.
 
 Em resumo, o projeto é uma agenda a qual registra dados dos usuários (nome, telefone, endereço...) e exibe de forma interativa. 
+
+4 - BNF: A pasta apresenta um trabalho da matéria de compiladores. O projeto visa criar uma BNF, utilizando como referência o Clipper, com a finalidade de compreender mellhor todo o processo de formulação e compilação de uma linguagem.
