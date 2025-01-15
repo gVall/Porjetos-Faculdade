@@ -1,0 +1,6 @@
+Harry Potter;30
+Lovecraft;35
+Duna;25
+Guia do Mochileiro das Galaxias;20
+kimetsu no yaiba Vol 1;70
+Sherlock Holmes;45

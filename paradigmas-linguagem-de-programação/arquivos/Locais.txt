@@ -1,0 +1,35 @@
+Shopping Cidade Jardim;1;-16.6824;-49.3140
+Goiania Shopping;1;-16.7076;-49.2730
+Mandrake Comic Shop;2;-16.7079;-49.2708
+PUC Area II;1;-16.6788;-49.2437
+Pao de Acucar;3;-16.6837;-49.2651
+Droga Raia;4;-16.6922;-49.2788
+Drogasil;4;-16.6890;-49.2746
+Hospital HUGO;1;-16.7091;-49.2551
+Hospital Samaritano;1;-16.6791;-49.2850
+Zoologico de Goiania;1;-16.6818;-49.2727
+Bosque dos Buritis;1;-16.6818;-49.2619
+Shopping Flamboyant;1;-16.7105;-49.2369
+Estadio Serra Dourada;1;-16.6990;-49.2350
+Pro Brazilian;3;-16.7084;-49.2879
+Supermercado Bretas;3;-16.6844;-49.2929
+Supermercado Tatico;3;-16.6686;-49.2542
+UNIGOIAS - Centro Universitario de Goias;1;-16.6913;-49.3106
+UFG - Campus Samambaia;1;-16.6059;-49.2615
+IFG - Campus Goiania;1;-16.6654;-49.2557
+Hospital Orion;1;-16.6965;-49.2697
+IOG - Instituto Ortopedico de Goiania;1;-16.6933;-49.2739
+Bar do Peixe;5;-16.6929;-49.2695
+Churrascaria Favo de Mel;5;-16.6902;-49.2551
+Exotiquario;1;-16.6888;-49.2578
+Colegio Sudoeste;1;-16.7042;-49.3063
+Hospital Amparo;1;-16.7088;-49.2691
+Velho Texas;5;-16.7025;-49.2571
+Emporio Laura;5;-16.7041;-49.2620
+Protagoras;1;-16.7149;-49.2658
+Golden Tulip Goiania Address;1;-16.6880;-49.2646
+Athenas Plaza Hotel;1;-16.6922;-49.2651
+Plaza Inn Executive;1;-16.6908;-49.2653
+Hotel Ibis Goiania;1;-16.6904;-49.2629
+Supermercado Aurora;3;-16.6774;-49.3000
+Passeio das Aguas Shopping;1;-16.6293;-49.2786

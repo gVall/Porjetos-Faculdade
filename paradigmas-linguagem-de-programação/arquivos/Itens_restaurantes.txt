@@ -1,0 +1,6 @@
+Coca Cola lata;6
+Strogonoff de frango;25
+Feijoada;23
+Lasanha;20
+Hamburguer;23
+Batata frita 150g;12

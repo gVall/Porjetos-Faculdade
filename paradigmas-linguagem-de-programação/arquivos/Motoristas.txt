@@ -1,0 +1,11 @@
+1;Gustavo;Shopping Cidade Jardim;livre
+2;Augusto;Goiania Shopping;livre
+3;Pedro;Zoologico de Goiania;livre
+4;Yves;Shopping Flamboyant;livre
+5;Joemias;Shopping Cidade Jardim;livre
+6;Hermanotel;Goiania Shopping;livre
+7;Gisely;Zoologico de Goiania;livre
+8;Katiusia;Shopping Flamboyant;livre
+9;Renato;Protagoras;livre
+10;Leticia;Hospital Orion;livre
+11;Renato;Estadio Serra Dourada;livre
