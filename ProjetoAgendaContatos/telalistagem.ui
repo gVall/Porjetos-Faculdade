@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TelaListagem</class>
+ <widget class="QDialog" name="TelaListagem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1192</width>
+    <height>402</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButtonVoltar">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>30</y>
+     <width>83</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Voltar</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>1111</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <column>
+    <property name="text">
+     <string>Nome Completo</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Logradouro</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Complmento</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Cep</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>DDI</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>DDD</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Telefone</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Email</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>URL</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Foto</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="pushButtonListar">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>30</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Listar Dados</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
