@@ -1,0 +1,1090 @@
+----------------------------------------UNIVERSIDADE----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO UNIVERSIDADE
+(
+	UNIV_CODIGO, UNIV_NOME, UNIV_TELEFONE, UNIV_EMAIL, UNIV_SITE
+)
+VALUES
+(
+	'PUCGO86', 'Pontifícia Universidade Católica de Goiás', 6239461000, 'reitoria@pucgoias.edu.br', 'sites.pucgoias.edu.br'
+);
+
+----------------------------------------CAPACITAÇÃO---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+insert into capacitacao
+(
+	cap_tipo, cap_descricao, cap_instituicao_responsavel
+)
+values
+(
+	'Engenharia da Computação',
+	'A Engenharia de Computação é uma disciplina que integra vários campos da Ciência da Computação e da Engenharia Eletrônica necessários para desenvolver hardware e software.',
+	'PUC-SP - Campus Monte Alegre'
+);
+
+insert into capacitacao
+(
+	cap_tipo, cap_descricao, cap_instituicao_responsavel
+)
+values
+(
+	'Ciência da Computação',
+	'Ciência da computação é a ciência que estuda as técnicas, metodologias e instrumentos computacionais, que automatiza processos e desenvolve soluções baseadas no uso do processamento de dados.',
+	'PUC-RS - Pontifícia Universidade Católica do Rio Grande do Sul'
+);
+
+insert into capacitacao
+(
+	cap_tipo, cap_descricao, cap_instituicao_responsavel
+)
+values
+(
+	'Fisica',
+	'Física é a ciência que estuda a natureza e seus fenômenos em seus aspectos mais gerais. Analisa suas relações e propriedades, além de descrever e explicar a maior parte de suas consequências.',
+	'PUC-RS - Pontifícia Universidade Católica do Rio Grande do Sul'
+);
+
+insert into capacitacao
+(
+	cap_tipo, cap_descricao, cap_instituicao_responsavel
+)
+values
+(
+	'Química',
+	'DescriçãoQuímica é a ciência que estuda a composição, estrutura, propriedades da matéria, as mudanças sofridas por ela durante as reações químicas e a sua relação com a energia.',
+	'PUC-RS - Pontifícia Universidade Católica do Rio Grande do Sul'
+);
+
+insert into capacitacao
+(
+	cap_tipo, cap_descricao, cap_instituicao_responsavel
+)
+values
+(
+	'Matemática',
+	'A matemática é a ciência do raciocínio lógico e abstrato, que estuda quantidades, medidas, espaços, estruturas, variações e estatísticas. Um trabalho matemático consiste em procurar por padrões, formular conjecturas e, por meio de deduções rigorosas a partir de axiomas e definições, estabelecer novos resultados.',
+	'PUC-RS - Pontifícia Universidade Católica do Rio Grande do Sul'
+);
+
+insert into capacitacao
+(
+	cap_tipo, cap_descricao, cap_instituicao_responsavel
+)
+values
+(
+	'Biologia',
+	'Biologia é a ciência que estuda a vida e os organismos vivos. A biologia está dividida em vários campos especializados que abrangem a morfologia, fisiologia, anatomia, comportamento, origem, evolução e distribuição da matéria viva, além dos processos vitais e das relações entre os seres vivos.',
+	'PUC-RS - Pontifícia Universidade Católica do Rio Grande do Sul'
+);
+
+insert into capacitacao
+(
+	cap_tipo, cap_descricao, cap_instituicao_responsavel
+)
+values
+(
+	'Engenharia Civil',
+	'A engenharia civil é o ramo da engenharia que engloba a concepção, o projeto, construção e manutenção de todos os tipos de infraestrutura necessários ao bem estar e ao desenvolvimento da sociedade, além da preservação do ambiente natural.',
+	'PUC-SP - Campus Monte Alegre'
+);
+
+-----------------------------------------PROFESSOR-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO PROFESSOR
+(
+	PROF_MATRICULA, PROF_NOME, PROF_CURRICULO, PROF_DISCIPLINAS_MINISTRAVEIS, PROF_TITULACAO, PROF_UNIV_CODIGO, PROF_CAP_TIPO
+)
+VALUES
+(
+	200815306, 'Wanessa Carvalho', 'Mestre em Engenharia da Computação, Formada PUCSP, Especialização em TI.',
+	'Engenharia de software, Engenharia de Requisitos',
+	'Diretora - ECEC', 'PUCGO86', 'Engenharia da Computação'
+);
+
+INSERT INTO PROFESSOR
+(
+	PROF_MATRICULA, PROF_NOME, PROF_CURRICULO, PROF_DISCIPLINAS_MINISTRAVEIS, PROF_TITULACAO, PROF_UNIV_CODIGO, PROF_CAP_TIPO
+)
+VALUES
+(
+	200132182, 'Arthur Vienna', 'Doutor em Engenharia da Computação, Formada PUCRJ, Especialização em IA.',
+	'Engenharia de software, Engenharia de Requisitos',
+	'Cordenador - Engenharia da Computação', 'PUCGO86', 'Engenharia da Computação'
+);
+
+INSERT INTO PROFESSOR
+(
+	PROF_MATRICULA, PROF_NOME, PROF_CURRICULO, PROF_DISCIPLINAS_MINISTRAVEIS, PROF_TITULACAO, PROF_UNIV_CODIGO, PROF_CAP_TIPO
+)
+VALUES
+(
+	200019209, 'Izabel Silva', 'Doutora em Ciência da Computação, Formada em PUCRS, Especialização em Banco de Dados.',
+	'Engenharia de software, Engenharia de Requisitos',
+	'Cordenadora - Ciência da Computação', 'PUCGO86', 'Ciência da Computação'
+);
+
+INSERT INTO PROFESSOR
+(
+	PROF_MATRICULA, PROF_NOME, PROF_CURRICULO, PROF_DISCIPLINAS_MINISTRAVEIS, PROF_TITULACAO, PROF_UNIV_CODIGO, PROF_CAP_TIPO
+)
+VALUES
+(
+	199501503, 'Sofia Aguiar', 'Engenhera Civil, Formada em UFRJ.',
+	'Materiais de Construção Civil, Teoria das Estruturas, Geotecnia, Isostática',
+	'Cordenadora - Engenharia Civil', 'PUCGO86', 'Engenharia Civil'
+);
+
+INSERT INTO PROFESSOR
+(
+	PROF_MATRICULA, PROF_NOME, PROF_CURRICULO, PROF_DISCIPLINAS_MINISTRAVEIS, PROF_TITULACAO, PROF_UNIV_CODIGO, PROF_CAP_TIPO
+)
+VALUES
+(
+	199200796, 'Alison Martins', 'Engenhera Civil, Formado em UFG-GO.',
+	'Materiais de Construção Civil, Teoria das Estruturas, Geotecnia, Isostática, Topografia e Geodésia, Noções de Arquitetura e Urbanismo',
+	'Diretor - EENG', 'PUCGO86', 'Engenharia Civil'
+);
+
+INSERT INTO PROFESSOR
+(
+	PROF_MATRICULA, PROF_NOME, PROF_CURRICULO, PROF_DISCIPLINAS_MINISTRAVEIS, PROF_TITULACAO, PROF_UNIV_CODIGO, PROF_CAP_TIPO
+)
+VALUES
+(
+	199130289, 'João Oliveira', 'Licenciado em Matemática',
+	'Álgebra Linear, Calculo Diferencia e Integral, Geometria Euclidiana',
+	'Cordenador - Matemática', 'PUCGO86', 'Matemática'
+);
+
+INSERT INTO PROFESSOR
+(
+	PROF_MATRICULA, PROF_NOME, PROF_CURRICULO, PROF_DISCIPLINAS_MINISTRAVEIS, PROF_TITULACAO, PROF_UNIV_CODIGO, PROF_CAP_TIPO
+)
+VALUES
+(
+	197357662, 'Paulo Coelho', 'Mestre em Engenharia da Computação, Formada PUCSP, Especialização em TI.',
+	'Engenharia de software, Engenharia de Requisitos, Projeto de Banco de Dados',
+	'Professor', 'PUCGO86', 'Engenharia da Computação'
+);
+
+INSERT INTO PROFESSOR
+(
+	PROF_MATRICULA, PROF_NOME, PROF_CURRICULO, PROF_DISCIPLINAS_MINISTRAVEIS, PROF_TITULACAO, PROF_UNIV_CODIGO, PROF_CAP_TIPO
+)
+VALUES
+(
+	200218156, 'Paula Carvalho', 'Mestre em Engenharia da Computação, Formada PUCSP, Especialização em TI.',
+	'Engenharia de software, Engenharia de Requisitos',
+	'Professor', 'PUCGO86', 'Engenharia da Computação'
+);
+
+----------------------------------------ESCOLA----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO ESCOLA
+(
+	ESC_CODIGO, ESC_NOME, ESC_TELEFONE, ESC_EMAIL, ESC_SITE, ESC_UNIV_CODIGO ,ESC_PROF_DIRETOR
+)
+VALUES
+(
+	'ECEC', 'Escola de Ciências Exatas e da Computação-ECEC-PUCGO', 6239461297, 'ecec@pucgoias.edu.br', 'sites.pucgoias.edu.br',
+	'PUCGO86', 200815306
+);
+
+INSERT INTO ESCOLA
+(
+	ESC_CODIGO, ESC_NOME, ESC_TELEFONE, ESC_EMAIL, ESC_SITE, ESC_UNIV_CODIGO ,ESC_PROF_DIRETOR
+)
+VALUES
+(
+	'EENG', 'Escola De Engenharia', 6239461351, 'engenharia@pucgoias.edu.br', 'sites.pucgoias.edu.br',
+	'PUCGO86', 199200796
+);
+
+----------------------------------------CURSO----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO CURSO
+(
+	CUR_Codigo, CUR_NOME, CUR_Descricao, CUR_ESC_Codigo, CUR_PROF_Cordenador, CUR_CARG_HORARIA
+)
+VALUES
+(
+	'0033', 'Engenharia da Computação',
+	'A Engenharia de Computação é uma disciplina que integra vários campos da Ciência da Computação e da Engenharia Eletrônica necessários para desenvolver hardware e software.',
+	'ECEC', 200132182, 4110
+);
+
+INSERT INTO CURSO
+(
+	CUR_Codigo, CUR_NOME, CUR_Descricao, CUR_ESC_Codigo, CUR_PROF_Cordenador, CUR_CARG_HORARIA
+)
+VALUES
+(
+	'0077', 'Ciência da Computação',
+	'Ciência da computação é a ciência que estuda as técnicas, metodologias e instrumentos computacionais, que automatiza processos e desenvolve soluções baseadas no uso do processamento de dados.',
+	'ECEC', 200019209, 3270
+);
+
+INSERT INTO CURSO
+(
+	CUR_Codigo, CUR_NOME, CUR_Descricao, CUR_ESC_Codigo, CUR_PROF_Cordenador, CUR_CARG_HORARIA
+)
+VALUES
+(
+	'0025', 'Engenharia Civil',
+	'A engenharia civil é o ramo da engenharia que engloba a concepção, o projeto, construção e manutenção de todos os tipos de infraestrutura necessários ao bem estar e ao desenvolvimento da sociedade, além da preservação do ambiente natural.',
+	'EENG', 199501503, 3840
+);
+
+INSERT INTO CURSO
+(
+	CUR_Codigo, CUR_NOME, CUR_Descricao, CUR_ESC_Codigo, CUR_PROF_Cordenador, CUR_CARG_HORARIA
+)
+VALUES
+(
+	'0011', 'Matemática',
+	'A Matemática é uma ciência que relaciona a lógica com situações práticas habituais. Ela desenvolve uma constante busca pela veracidade dos fatos por meio de técnicas precisas e exatas. Ao longo da história, a Matemática foi sendo construída e aperfeiçoada, prosseguindo em constante evolução, investigando novas situações e estabelecendo relações com os acontecimentos cotidianos.',
+	'EENG', 199130289, 3120
+);
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	2017298152, 'Márcia Milena dos Santos', 93503174273, 34893447, 'Feminino',
+	'05/02/2017', 'EENG', 'PUCGO86', 1
+);
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	2010208402, 'Márcio dos Santos', 96523372679, 38899442, 'Masculino',
+	'05/02/2010', 'EENG', 'PUCGO86', 4
+);
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	1998197218, 'Marcos Ribeiro', 13627231180, 45372151, 'Masculino',
+	'01/02/1998', 'EENG', 'PUCGO86', 5
+);
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	1998911872, 'Ana Ribeiro', 06488819119, 32994375, 'Feminino',
+	'01/02/1998', 'EENG', 'PUCGO86', 2
+);
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	1995901042, 'Aline Rodrigues', 35735819194, 28427225, 'Feminino',
+	'19/09/1995', 'EENG', 'PUCGO86', 3
+);
+
+-----------------------------------------ALUNOS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS, ALU_DISCIPLINAS, ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20161003300614, 'Leonardo Tiago Nascimento', 71656084864, 225102754, '16/09/2000', 'Masculino',
+	'Engenharia da Computação', 'Nenhum', 'Algoritmos, Fundamentos de Computação I, Laboratório de Programação,
+	Sistemas Digitais para Computação, Engenharia de Software', '0033', 2
+);
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS, ALU_DISCIPLINAS, ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20182003304069, 'Guilherme Enzo Melo', 75113073881, 212493929, '26/05/1996', 'Masculino',
+	'Engenharia da Computação', 'Nenhum', 'Engenharia de Requisitos, Técnicas de Programação I, Fundamentos de Computação II,
+	Cálculo Diferencial e Integral I, Geometria Analítica e Cálculo Vetorial ', '0033', 4
+);
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS, ALU_DISCIPLINAS, ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20182003324027, 'Pietra Agatha Ramos', 31909537918, 111418458, '23/09/2000', 'Feminino',
+	'Engenharia da Computação', 'Nenhum', 'Engenharia de Requisitos, Técnicas de Programação I, Fundamentos de Computação II,
+	Cálculo Diferencial e Integral I, Geometria Analítica e Cálculo Vetorial ', '0033', 1
+);
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS, ALU_DISCIPLINAS, ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20161003304029, 'Eduardo Bernardo Costa', 37253369700, 435515974, '19/11/1963', 'Masculino',
+	'Engenharia da Computação', 'Ciência da Computação', 'Metodologia de Pesquisa na Computação, Controle de Processos, Inteligência Artificial',
+	'0033', 5
+);
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS, ALU_DISCIPLINAS, ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20181003308235, 'Breno Otávio Henry', 46968667428, 144640843, '01/01/1983', 'Masculino',
+	'Engenharia da Computação', 'Matemática', 'Arquitetura de Computadores I, Estrutura de Dados II, Projeto de Banco de Dados, Circuitos Elétricos I',
+	'0033', 3
+);
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS,ALU_DISCIPLINAS,ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20131007703029, 'Mariane Larissa Marina Martins', 31710065702, 413791816, '21/06/1978', 'Feminino',
+	'Ciência da Computação', 'Matemática', 'Projeto e Análise de Algoritmos II, Tecnologia de Construção de Software, Redes de Computadores II',
+	'0077', 5 	
+);
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS,ALU_DISCIPLINAS,ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20142007751057, 'Martin Fábio Campos', 39802712000, 358874968, '06/08/1986', 'Masculino',
+	'Ciência da Computação', 'Física', 'Compiladores, Criptografia Aplicada, Teologia, Ciências Exatas e Tecnológicas',
+	'0077', 1
+);
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS,ALU_DISCIPLINAS,ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20182007795034, 'Manuel Francisco Lopes', 34873489342, 397888478, '03/12/1995', 'Masculino',
+	'Ciência da Computação', 'Nenhum', 'Algoritmos, Fundamentos de Computação I, Laboratório de Programação,
+	Sistemas Digitais para Computação, Engenharia de Software', '0077', 5
+);
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS,ALU_DISCIPLINAS,ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20152007740209, 'Bárbara Laura da Rosa', 91043596747, 352172605, '04/06/1960', 'Feminino',
+	'Ciência da Computação', 'História e Administração', 'Engenharia de Requisitos, Fundamentos de Computação II, Cálculo Diferencial e Integral I',
+	'0077', 2
+);
+
+INSERT INTO ALUNO
+(
+	ALU_MATRICULA, ALU_NOME, ALU_CPF, ALU_RG, ALU_DATA_NASCIMENTO, ALU_SEXO, ALU_CURSO_ATUAL,
+	ALU_CURSOS_CONCLUIDOS,ALU_DISCIPLINAS,ALU_CUR_CODIGO, ALU_END_ID
+)
+VALUES
+(
+	20171007735106, 'Lívia Fátima Alícia', 23115877811, 389751984, '02/10/1999', 'Feminino',
+	'Ciência da Computação', 'Nenhum', 'Língua Portuguesa I, Eletricidade e Eletrônica, Estrutura de Dados I',
+	'0077', 3
+);
+
+---------------------------------------------DISCIPLINA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1117', 'Projeto de Banco de Dados', 90, 'CMP1047', '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1280', 'Engenharia de Software', 60, NULL, '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1044', 'Algoritmos', 60, NULL, '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1045', 'Fundamentos de Computação I', 60, NULL, '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1046', 'Laboratório de Programação', 60, NULL, '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1090', 'Sistemas Digitais para Computação', 90, NULL, '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1047', 'Engenharia de Requisitos', 60, 'CMP1280', '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1048', 'Técnicas de Programação I', 60, 'CMP1044', '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1054', 'Estrutura de Dados I', 90, 'CMP1048', '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1057', 'Arquitetura de Computadores I', 90, 'CMP1090', '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP4151', 'Sistemas Operacionais I', 60, 'CMP1054', '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1068', 'Redes de Computadores I', 90, 'CMP1099', '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1105', 'Projetos de Componentes e de Circuitos', 60, 'ENG1550', '0033'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'ENG1180', 'Introdução à Engenharia Civil', 60, NULL, '0025' 
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'MAF2201', 'Física Geral e Experimental I', 60, NULL, '0025' 
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1060', 'Informática e Computação', 40, NULL, '0025' 
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'ENG1070', 'Expressão Gráfica Básica', 60, NULL, '0025' 
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA,DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'ENG4201', 'Ciências do Ambiente', 60, NULL, '0025' 
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'ENG1051', 'Desenho Aplicado I', 60, 'ENG1070', '0025' 
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1171', 'Projeto de Banco de Dados', 90, 'CMP1074', '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1208', 'Engenharia de Software', 60, NULL, '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1055', 'Algoritmos', 60, NULL, '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1084', 'Fundamentos de Computação I', 60, NULL, '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1066', 'Laboratório de Programação', 60, NULL, '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1009', 'Sistemas Digitais para Computação', 90, NULL, '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1094', 'Engenharia de Requisitos', 60, 'CMP1208', '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1014', 'Técnicas de Programação I', 60, 'CMP1055', '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1050', 'Estrutura de Dados I', 90, 'CMP1014', '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'CMP1075', 'Arquitetura de Computadores I', 90, 'CMP1009', '0077'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'MAF1161', 'Fundamentos de Matemática I', 60, NULL, '0011'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'MAF2001', 'Cálculo Dif. e Integral I', 60, 'MAF1161', '0011'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'MAF1171', 'ÁLgebra Linear I', 60, NULL, '0011'
+);
+
+INSERT INTO DISCIPLINA
+(
+	DISP_CODIGO, DISP_NOME, DISP_CARGA_HORARIA, DISP_P_REQ_REQUERENTE, DISP_CUR_CODIGO
+)
+VALUES
+(
+	'MAF1510', 'Geometria Euclidiana', 60, NULL, '0011'
+);
+
+---------------------------------------------FUNCIONARIO---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	2017298521, 'Márcia Milena dos Santos', 93503174273, 34893447, 'Feminino',
+	'05/02/2017', 'ECEC', 'PUCGO86', 1
+);
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	2010208024, 'Márcio dos Santos', 96523372679, 38899442, 'Masculino',
+	'05/02/2010', 'ECEC', 'PUCGO86', 4
+);
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	1998197182, 'Marcos Ribeiro', 13627231180, 45372151, 'Masculino',
+	'01/02/1998', 'ECEC', 'PUCGO86', 5
+);
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	1998911728, 'Ana Ribeiro', 06488819119, 32994375, 'Feminino',
+	'01/02/1998', 'ECEC', 'PUCGO86', 2
+);
+
+INSERT INTO FUNCIONARIO
+(
+	FUN_MATRICULA, FUN_NOME, FUN_CPF, FUN_RG, FUN_SEXO, FUN_DATA_ADMISSAO, FUN_ESCOLA_VINCULADA, FUN_UNIV_CODIGO, FUN_END_ID
+
+)
+VALUES
+(
+	1995901420, 'Aline Rodrigues', 35735819194, 28427225, 'Feminino',
+	'19/09/1995', 'ECEC', 'PUCGO86', 3
+);
+
+------------------------------------------------TURMA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO TURMA
+(
+	TURM_CODIGO, TURM_NOME, TURM_HORARIO_AULA, TURM_SALA, TURM_AULA, TURM_SITUACAO,
+	TURM_ANO, TURM_SEMESTRE, TURM_PROF_MATRICULA, TURM_DISP_CODIGO
+)
+VALUES
+(
+	'A01','Engenharia de Software', '09:00', 108,'Segunda-feira/Sexta-Feira',
+	'Turma Válida', 2018, 1, '200218156', 'CMP1280'
+);
+
+INSERT INTO TURMA
+(
+	TURM_CODIGO, TURM_NOME, TURM_HORARIO_AULA, TURM_SALA, TURM_AULA, TURM_SITUACAO,
+	TURM_ANO, TURM_SEMESTRE, TURM_PROF_MATRICULA, TURM_DISP_CODIGO
+)
+VALUES
+(
+	'A03','Engenharia de Requisito', '10:45', 108,'Segunda-feira/Sexta-Feira',
+	'Turma Válida', 2018, 1, '200218156', 'CMP1280'
+);
+
+INSERT INTO TURMA
+(
+	TURM_CODIGO,TURM_NOME, TURM_HORARIO_AULA, TURM_SALA, TURM_AULA, TURM_SITUACAO,
+	TURM_ANO, TURM_SEMESTRE, TURM_PROF_MATRICULA, TURM_DISP_CODIGO
+)
+VALUES
+(
+	'A04','Projeto de Banco de Dados', '09:00', 205,'Segunda-feira/Sexta-Feira',
+	'Turma Válida', 2019, 2, '197357662', 'CMP1117'
+);
+
+
+INSERT INTO TURMA
+(
+	TURM_CODIGO,TURM_NOME, TURM_HORARIO_AULA, TURM_SALA, TURM_AULA, TURM_SITUACAO,
+	TURM_ANO, TURM_SEMESTRE, TURM_PROF_MATRICULA, TURM_DISP_CODIGO
+)
+VALUES
+(
+	'A05','Engenharia de Software', '07:15', 205,'Segunda-feira/Sexta-Feira',
+	'Turma Válida', 2019, 2, '197357662', 'CMP1117'
+);
+
+INSERT INTO TURMA
+(
+	TURM_CODIGO, TURM_NOME, TURM_HORARIO_AULA, TURM_SALA, TURM_AULA, TURM_SITUACAO,
+	TURM_ANO, TURM_SEMESTRE, TURM_PROF_MATRICULA, TURM_DISP_CODIGO
+)
+VALUES
+(
+	'A02','Engenharia de Requisitos', '10:45', 108,'Segunda-feira/Sexta-Feira',
+	'Turma Válida', 2018, 1, '200218156', 'CMP1280'
+);
+
+
+-----------------------------------------------Endereco-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO ENDERECO 
+(
+	END_ID, END_LOGRADOURO, END_NUMERO, END_BAIRRO, END_COMPLEMENTO, END_CIDADE, END_ESTADO, END_CEP
+)
+VALUES
+(
+	1,'Rua Parau', '0', 'Alvorada', 'Quadra 50', 'Manaus', 'GO','69043220' 
+);
+
+INSERT INTO ENDERECO 
+(
+	END_ID, END_LOGRADOURO, END_NUMERO, END_BAIRRO, END_COMPLEMENTO, END_CIDADE, END_ESTADO, END_CEP
+)
+VALUES
+(
+	2,'Rua Um', '220', 'Minaslândia (P Maio)', 'Ed Stark', 'Belo Horizonte', 'GO','31810-365' 
+);
+
+INSERT INTO ENDERECO
+(
+	END_ID, END_LOGRADOURO, END_NUMERO, END_BAIRRO, END_COMPLEMENTO,
+	END_CIDADE, END_ESTADO, END_CEP
+)
+VALUES
+(
+	3, 'Rua Professor Domingos Moeda1', '12', 'Centro', '', 'Maceió', 'GO', '57020100'
+);
+
+INSERT INTO ENDERECO
+(
+	END_ID, END_LOGRADOURO, END_NUMERO, END_BAIRRO, END_COMPLEMENTO,
+	END_CIDADE, END_ESTADO, END_CEP
+)
+VALUES
+(
+	4, 'Rua SN 4', '', 'Setor Noroeste', '', 'Goiânia', 'GO', '74465543'
+);
+
+INSERT INTO ENDERECO
+(
+	END_ID, END_LOGRADOURO, END_NUMERO, END_BAIRRO, END_COMPLEMENTO,
+	END_CIDADE, END_ESTADO, END_CEP
+)
+VALUES
+(
+	5, 'Rua Sabiá', '16A', 'Parque Industrial de Goiânia', '', 'Goiânia', 'GO', '74630060'
+);
+
+----------------------------------------------RENDIMENTO------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------DISCIPLINA_MINISTRADA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO DISCIPLINA_MINISTRADA
+(
+    DM_ID_DISCIPLINAS_MINISTRADAS,DM_DISCIPLINA,DM_PROFESSOR
+)
+VALUES
+(
+    01,'CMP1280',197357662
+);
+
+INSERT INTO DISCIPLINA_MINISTRADA
+(
+    DM_ID_DISCIPLINAS_MINISTRADAS,DM_DISCIPLINA,DM_PROFESSOR
+)
+VALUES
+(
+    02,'CMP1047',197357662
+);
+
+INSERT INTO DISCIPLINA_MINISTRADA
+(
+    DM_ID_DISCIPLINAS_MINISTRADAS,DM_DISCIPLINA,DM_PROFESSOR
+)
+VALUES
+(
+    03,'CMP1117',197357662
+);
+
+INSERT INTO DISCIPLINA_MINISTRADA
+(
+    DM_ID_DISCIPLINAS_MINISTRADAS,DM_DISCIPLINA,DM_PROFESSOR
+)
+VALUES
+(
+    04,'CMP1280',200218156
+);
+
+INSERT INTO DISCIPLINA_MINISTRADA
+(
+    DM_ID_DISCIPLINAS_MINISTRADAS,DM_DISCIPLINA,DM_PROFESSOR
+)
+VALUES
+(
+    05,'CMP1047',200218156
+);
+
+
+
+----------------------------------------------PRE_REQUISITO------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA, P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1047','CMP1117'
+);
+
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1280','CMP1047'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1044','CMP1048'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1048','CMP1054'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1090','CMP1057'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1054','CMP4151'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1057','CMP4151'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1099','CMP1068'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'ENG1550','CMP1105'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1074','CMP1171'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1208','CMP1094'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1055','CMP1014'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1014','CMP1050'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'CMP1009','CMP1075'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'MAF1161','MAF2001'
+);
+
+INSERT INTO PRE_REQUISITO
+(
+	P_REQ_REQUIRIDA,P_REQ_REQUERENTE
+)
+VALUES
+(
+	'ENG1070','ENG1051'
+);
+
+-------------------------------------------------------------------------------------------------------------------------------------------
