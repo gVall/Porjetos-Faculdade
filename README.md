@@ -13,3 +13,5 @@ e dinâmica implementação de uma interface visual para os usuários.
 Em resumo, o projeto é uma agenda a qual registra dados dos usuários (nome, telefone, endereço...) e exibe de forma interativa. 
 
 4 - BNF: A pasta apresenta um trabalho da matéria de compiladores. O projeto visa criar uma BNF, utilizando como referência o Clipper, com a finalidade de compreender mellhor todo o processo de formulação e compilação de uma linguagem.
+
+5 - Galaga: O projeto faz parte do conteúdo de Computação gráfica. Como o próprio nome diz, a ideia foi recriar um jogo semelhante a Galaga. Para sua realização foi feita a partir do uso do Processing
