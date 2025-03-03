@@ -1,5 +1,5 @@
 # Porjetos-Faculdade
-Alguns projeto feitos durante minha graduação,
+Alguns projeto feitos durante minha graduação, os mesmos não possuem muitos comentários (algo já aplicado em todos meus projetos atuais)
 
 1 - Paradigmas Linguagem de Programação: O projeto é uma espécie de Uber mas utilizando uma linguagem mais antiga, no caso Common Lisp.
 
